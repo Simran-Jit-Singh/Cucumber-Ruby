@@ -9,7 +9,7 @@ Parameters for post API
 response of the API
 {"city":city_name", "country":"country_name", "current":"current_temperature","units":"celcius" }
 
-# cucumber executor using ruby
+# Cucumber Executor using Ruby
 
 The project also contains cucumber test to start the service and get the temperatur of the city.
 
