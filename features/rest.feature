@@ -16,4 +16,3 @@ Given I start the service
 When get temperature by passing invalid city "1" of country "2"
 Then the test fail
 
-Scenario 
