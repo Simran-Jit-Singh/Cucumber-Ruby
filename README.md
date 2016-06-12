@@ -25,21 +25,21 @@ I have Automated 3 test using cucumber
 
 Test 1
 Scenario: start the service and get temperature of a city
-step 1: start the service 
-step 2: pass city name and country name and validate the responses
-step 3: stop the service
+* step 1: start the service 
+* step 2: pass city name and country name and validate the responses
+* step 3: stop the service
 
 Test 2
 Scenario: dont start the service and try to get the temperature
-step 1: keep the service down
-step 2: try to get the temperature of some city
-step 3: expect failure: Unable to establish TCP connection as service is down
+* step 1: keep the service down
+* step 2: try to get the temperature of some city
+* step 3: expect failure: Unable to establish TCP connection as service is down
 
 Test 3
 Scenario: pass invalid city and country 
-step 1: start the service
-step 2: try to get temperatur by passing invalid city 
-step 3: API should return 500 
+* step 1: start the service
+* step 2: try to get temperatur by passing invalid city 
+* step 3: API should return 500 
 
 We can also start the service without cucumber. After resolving all the dependencies, download the file actions.rb and run the command ruby actions.rb
 This will start the service on local machine on port 6001
