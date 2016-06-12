@@ -1,6 +1,6 @@
 # Cucumber-Ruby
 
-This project is designed to to implement wrapper Api over yahoo wather report api https://developer.yahoo.com/weather/.
+This project is designed to to implement wrapper API over yahoo wather report api https://developer.yahoo.com/weather/.
 The wrapper API is written in ruby scripting language. Sinatra is used to start the script and run it as a service on port 6001.
 
 Parameters for post API
