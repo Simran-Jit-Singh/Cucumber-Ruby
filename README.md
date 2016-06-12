@@ -9,9 +9,9 @@ Parameters for post API
 response of the API
 {"city":city_name", "country":"country_name", "current":"current_temperature","units":"celcius" }
 
-cucumber executor using ruby
-The project also contains cucumber test to start the service and get the temperatur of the city.
+# cucumber executor using ruby
 
+The project also contains cucumber test to start the service and get the temperatur of the city.
 
 Steps to follow to use the project
 Ensure you have ruby 2.9.1 or above version installed on your system 
@@ -42,7 +42,7 @@ step 2: try to get temperatur by passing invalid city
 step 3: API should return 500 
 
 We can also start the service without cucumber. After resolving all the dependencies, download the file actions.rb and run the command ruby actions.rb
-This will start the temperature service on local machine on port 6001
+This will start the service on local machine on port 6001
 
 To fire POST API using Rest Client (POSTMAN), follow these steps
 Url: http://127.0.0.1:6001/getWeatherForcast
