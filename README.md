@@ -19,27 +19,14 @@ Ensure you have ruby 2.9.1 or above version installed on your system
 1. Clone: clone the project from  <git clone https://github.com/simranj/Cucumber-Ruby.git>
 2. gem install bundler
 3. bundle
-4. cucumber --tags @restApi
+4. cucumber --tags @getTemperature
 
-I have Automated 3 test using cucumber
+The cucumber hooks takes care of starting and stopping the service. 
+@Before starts the service on local machine on port 6001
+This execute before the start of every scenario
 
-Test 1
-Scenario: start the service and get temperature of a city
-* step 1: start the service 
-* step 2: pass city name and country name and validate the responses
-* step 3: stop the service
-
-Test 2
-Scenario: dont start the service and try to get the temperature
-* step 1: keep the service down
-* step 2: try to get the temperature of some city
-* step 3: expect failure: Unable to establish TCP connection as service is down
-
-Test 3
-Scenario: pass invalid city and country 
-* step 1: start the service
-* step 2: try to get temperatur by passing invalid city 
-* step 3: API should return 500 
+@After starts the stop the service running on port 6001
+This executes after the end of every scenario.
 
 We can also start the service without cucumber. After resolving all the dependencies, download the file actions.rb and run the command ruby actions.rb
 This will start the service on local machine on port 6001
