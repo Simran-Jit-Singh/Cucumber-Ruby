@@ -1,3 +1,4 @@
+#Start the service before the Scenario Executes. This hook is invoked before scenario execution starts.
 Before do |scenario|
     puts "Starting the service on port 6001"
     path = File.expand_path File.dirname(__FILE__)
@@ -8,7 +9,7 @@ Before do |scenario|
 end
 
 
-
+#Terminate the service after Scenario Completion.
 After  do |scenario|
     puts "Killing process in teardown: #{$pid}"
     begin

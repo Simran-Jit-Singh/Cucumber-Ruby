@@ -6,6 +6,7 @@ Then /^weather forecast service is up and running on local machine$/ do
         puts "Service is running with Process Id #{$pid}"
 
     rescue => ex
+        # throw new Exception if the service in not running
         puts "ERROR: WEATHER FORECAST SERVICE IS DOWN #{$pid}. #{ex.class}=#{ex.message}"
         raise
     end
