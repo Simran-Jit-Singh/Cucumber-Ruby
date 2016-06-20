@@ -22,6 +22,7 @@ Ensure you have ruby 2.9.1 or above version installed on your system
 4. cucumber --tags @getTemperature
 
 The cucumber hooks takes care of starting and stopping the service. 
+
 @Before starts the service on local machine on port 6001
 This execute before the start of every scenario
 
