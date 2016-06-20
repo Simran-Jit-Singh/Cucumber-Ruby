@@ -24,7 +24,7 @@ Ensure you have ruby 2.9.1 or above version installed on your system
 The cucumber hooks takes care of starting and stopping the service. 
 
 @Before starts the service on local machine on port 6001
-This execute before the start of every scenario
+This execute before the start of every scenario.
 
 @After starts the stop the service running on port 6001
 This executes after the end of every scenario.
