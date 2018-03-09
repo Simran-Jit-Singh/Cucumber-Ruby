@@ -1,6 +1,6 @@
 # Cucumber-Ruby
 
-This project is designed to to implement wrapper API over yahoo wather report api https://developer.yahoo.com/weather/.
+This project is designed to implement wrapper API over yahoo wather report api https://developer.yahoo.com/weather/.
 The wrapper API is written in ruby scripting language. Sinatra is used to start the script and run it as a service on port 6001.
 
 Parameters for post API
@@ -9,11 +9,12 @@ Parameters for post API
 response of the API
 {"city":city_name", "country":"country_name", "current":"current_temperature","units":"celcius" }
 
-# Cucumber Executor using Ruby
+# Cucumber Executor
 
-The project also contains cucumber test to start the service and get the temperatur of the city.
+The project contains cucumber steps to start the service and get the temperatur of the city.
 
-Steps to follow to use the project
+Steps to follow to use the project:
+
 Ensure you have ruby 2.9.1 or above version installed on your system 
 
 1. Clone: clone the project from  <git clone https://github.com/simranj/Cucumber-Ruby.git>
