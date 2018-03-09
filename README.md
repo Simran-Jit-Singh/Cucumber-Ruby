@@ -24,13 +24,13 @@ Ensure you have ruby 2.9.1 or above version installed on your system
 
 The cucumber hooks takes care of starting and stopping the service. 
 
-@Before starts the service on local machine on port 6001
-This execute before the start of every scenario.
+@Before starts the service on local machine on port 6001.
+This is execued before the execution of every scenario.
 
-@After starts the stop the service running on port 6001
-This executes after the end of every scenario.
+@After starts the stop the service running on port 6001.
+This postdefine hook runs after the end of every scenario.
 
-We can also start the service without cucumber. After resolving all the dependencies, download the file actions.rb and run the command ruby actions.rb
+We can also start the service without cucumber. After resolving all the dependencies, download the file actions.rb and run the command 'ruby actions.rb'.
 This will start the service on local machine on port 6001
 
 To fire POST API using Rest Client (POSTMAN), follow these steps
