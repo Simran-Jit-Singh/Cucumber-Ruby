@@ -13,7 +13,7 @@ response of the API
 
 The project contains cucumber steps to start the service and get the temperatur of the city.
 
-Steps to follow to use the project:
+Steps to follow
 
 Ensure you have ruby 2.9.1 or above version installed on your system 
 
